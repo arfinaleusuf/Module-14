@@ -1,22 +1,7 @@
-#include <stdio.h>
-int cheak()
+#include<stdio.h>
+int cheak(int num)
 {
-    int a;
-    scanf("%d", &a);
-    if (a % 2 == 0)
-    {
-        a = 2;
-    }
-    else
-    {
-        a = 1;
-    }
-    return a;
-}
-int main()
-{
-    int res = cheak();
-    if (res == 2)
+    if(num%2== 0)
     {
         printf("even");
     }
@@ -24,5 +9,12 @@ int main()
     {
         printf("odd");
     }
+    return;
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int res = cheak(a);
     return 0;
 }
