@@ -1,8 +1,9 @@
-#include<stdio.h>
-int cheak(int num)
+#include <stdio.h>
+int cheak()
 {
     int a;
-    if(num%2== 0)
+    scanf("%d", &a);
+    if (a % 2 == 0)
     {
         a = 2;
     }
@@ -14,10 +15,8 @@ int cheak(int num)
 }
 int main()
 {
-    int a;
-    scanf("%d",&a);
-    int res = cheak(a);
-    if(res==2)
+    int res = cheak();
+    if (res == 2)
     {
         printf("even");
     }
